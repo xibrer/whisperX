@@ -51,6 +51,13 @@ This repository provides fast automatic speech recognition (70x realtime with la
 
 **Speaker Diarization** is the process of partitioning an audio stream containing human speech into homogeneous segments according to the identity of each speaker.
 
+### 中文说明：相对于 Whisper 的改进
+
+- 支持批量推理（可达到约 60-70x 实时速度）
+- 通过 wav2vec2 强制对齐提供更准确的词级时间戳
+- 支持说话人分离（多说话人标注）
+- 使用 VAD 预处理，减少幻觉并支持更稳定分段
+
 <h2 align="left", id="highlights">New🚨</h2>
 
 - 1st place at [Ego4d transcription challenge](https://eval.ai/web/challenges/challenge-page/1637/leaderboard/3931/WER) 🏆
